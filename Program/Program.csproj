@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C6D96F45-0549-453D-A89F-D85261B1D209}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Program</RootNamespace>
+    <AssemblyName>Program</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\EXE\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon_Check.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Interop.ActUtlTypeLib">
+      <HintPath>..\Library\Interop.ActUtlTypeLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="LibLog, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\LibLog.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\Library\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form\FrmMdi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmMdi.Designer.cs">
+      <DependentUpon>FrmMdi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmAlarm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmAlarm.designer.cs">
+      <DependentUpon>FrmAlarm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmParameter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmParameter.Designer.cs">
+      <DependentUpon>FrmParameter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmData.Designer.cs">
+      <DependentUpon>FrmData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmSearchData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmSearchData.Designer.cs">
+      <DependentUpon>FrmSearchData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmHidden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmHidden.Designer.cs">
+      <DependentUpon>FrmHidden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmAlarmHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmAlarmHistory.Designer.cs">
+      <DependentUpon>FrmAlarmHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmUxyLxy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmUxyLxy.Designer.cs">
+      <DependentUpon>FrmUxyLxy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmConverter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmConverter.Designer.cs">
+      <DependentUpon>FrmConverter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShareMemory\GlobalFunction.cs" />
+    <Compile Include="ShareMemory\GlobalValue.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form\FrmAlarmHistory.resx">
+      <DependentUpon>FrmAlarmHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmData.resx">
+      <DependentUpon>FrmData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmMdi.resx">
+      <DependentUpon>FrmMdi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmAlarm.resx">
+      <DependentUpon>FrmAlarm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmParameter.resx">
+      <DependentUpon>FrmParameter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmSearchData.resx">
+      <DependentUpon>FrmSearchData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmHidden.resx">
+      <DependentUpon>FrmHidden.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmUxyLxy.resx">
+      <DependentUpon>FrmUxyLxy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmConverter.resx">
+      <DependentUpon>FrmConverter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon_Check.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\3D\3D.csproj">
+      <Project>{b84a0194-e4d6-4c33-be8e-f380fc63aa52}</Project>
+      <Name>3D</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

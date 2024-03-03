@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Program", "Program\Program.csproj", "{C6D96F45-0549-453D-A89F-D85261B1D209}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3D", "3D\3D.csproj", "{B84A0194-E4D6-4C33-BE8E-F380FC63AA52}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C6D96F45-0549-453D-A89F-D85261B1D209}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6D96F45-0549-453D-A89F-D85261B1D209}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6D96F45-0549-453D-A89F-D85261B1D209}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6D96F45-0549-453D-A89F-D85261B1D209}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B84A0194-E4D6-4C33-BE8E-F380FC63AA52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B84A0194-E4D6-4C33-BE8E-F380FC63AA52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B84A0194-E4D6-4C33-BE8E-F380FC63AA52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B84A0194-E4D6-4C33-BE8E-F380FC63AA52}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {31CE7018-FED7-4D4C-BD83-837185B066D1}
+	EndGlobalSection
+EndGlobal
